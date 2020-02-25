@@ -26,23 +26,23 @@ Then put the install ZIP files into the same folder, resulting in a file structu
 jason@docker1:~/docker-essbase$ pwd && ls -l
 /home/jason/docker-essbase
 total 6415212
--rwxrwxr-x 1 jason jason       2072 Jan  3 22:01 config-and-start.sh
--rw-rw-r-- 1 jason jason        614 Jan  3 19:01 docker-compose.yml
--rw-rw-r-- 1 jason jason       3738 Jan  3 22:16 Dockerfile
--rwxrwxr-x 1 jason jason 1368259501 Dec 28 21:25 Essbase-11124-linux64.zip
--rw-r----- 1 jason jason      13853 Jan  3 19:40 essbase-config.xml
--rw-rw-r-- 1 jason jason        939 Jan  3 19:28 essbase-install.xml
--rwxrwxr-x 1 jason jason         47 Jan  3 19:29 essbash.sh
--rwxrwxr-x 1 jason jason        177 Jan  3 19:20 follow-essbase-logs.sh
--rwxrwxr-x 1 jason jason 1174052554 Dec 28 21:22 Foundation-11124-linux64-Part1.zip
--rwxrwxr-x 1 jason jason 1516370785 Dec 28 21:22 Foundation-11124-linux64-Part2.zip
--rwxrwxr-x 1 jason jason  980505762 Dec 28 21:22 Foundation-11124-linux64-Part4.zip
--rwxrwxr-x 1 jason jason 1529284475 Dec 28 21:22 Foundation-11124-Part3.zip
--rwxr-xr-x 1 jason jason     611504 Dec 31 21:19 jtds12.jar
--rw-rw-r-- 1 jason jason        605 Jan  3 19:01 load-sample-databases.msh
--rw-rw-r-- 1 jason jason       6629 Jan  3 22:27 README.md
--rwxrwxr-x 1 jason jason        417 Jan  3 19:21 restart.sh
--rw-rw-r-- 1 jason jason       2823 Dec 28 20:55 SimpleJdbcRunner.java
+-rwxrwxr-x 1 sowmya_t sowmya_t       2072 Jan  3 22:01 config-and-start.sh
+-rw-rw-r-- 1 sowmya_t sowmya_t        614 Jan  3 19:01 docker-compose.yml
+-rw-rw-r-- 1 sowmya_t sowmya_t       3738 Jan  3 22:16 Dockerfile
+-rwxrwxr-x 1 sowmya_t sowmya_t 1368259501 Dec 28 21:25 Essbase-11124-linux64.zip
+-rw-r----- 1 sowmya_t sowmya_t      13853 Jan  3 19:40 essbase-config.xml
+-rw-rw-r-- 1 sowmya_t sowmya_t        939 Jan  3 19:28 essbase-install.xml
+-rwxrwxr-x 1 sowmya_t sowmya_t         47 Jan  3 19:29 essbash.sh
+-rwxrwxr-x 1 sowmya_t sowmya_t        177 Jan  3 19:20 follow-essbase-logs.sh
+-rwxrwxr-x 1 sowmya_t sowmya_t 1174052554 Dec 28 21:22 Foundation-11124-linux64-Part1.zip
+-rwxrwxr-x 1 sowmya_t sowmya_t 1516370785 Dec 28 21:22 Foundation-11124-linux64-Part2.zip
+-rwxrwxr-x 1 sowmya_t sowmya_t  980505762 Dec 28 21:22 Foundation-11124-linux64-Part4.zip
+-rwxrwxr-x 1 sowmya_t sowmya_t 1529284475 Dec 28 21:22 Foundation-11124-Part3.zip
+-rwxr-xr-x 1 sowmya_t sowmya_t     611504 Dec 31 21:19 jtds12.jar
+-rw-rw-r-- 1 sowmya_t sowmya_t        605 Jan  3 19:01 load-sample-databases.msh
+-rw-rw-r-- 1 sowmya_t sowmya_t       6629 Jan  3 22:27 README.md
+-rwxrwxr-x 1 sowmya_t sowmya_t        417 Jan  3 19:21 restart.sh
+-rw-rw-r-- 1 sowmya_t sowmya_t       2823 Dec 28 20:55 SimpleJdbcRunner.java
 ```
 
 Open up a terminal to this folder. You can then use the `restart.sh` script to take down existing servers and build a new image, or run these commands yourself:
@@ -261,3 +261,8 @@ Rather than using the SQL Server on Linux database as your EPM repository backen
 ```
 docker run -it -e SQL_HOST=host.docker.internal -e SQL_USER=sa -e "SQL_PASSWORD=<your sa password>" essbase:11.1.2.4
 ```
+
+Please reach out to me at sowmya.ts@gmail.com for any questions.
+
+Thanks,
+Sowmya
