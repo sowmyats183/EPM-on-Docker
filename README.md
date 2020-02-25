@@ -17,14 +17,14 @@ It is not necessary to extract these files anywhere as they are extracted as nee
 To build this image, first clone this repository:
 
 ```
-git clone https://github.com/appliedolap/docker-essbase.git
+git clone https://github.com/sowmyats183/EPM-on-Docker.git
 ```
 
 Then put the install ZIP files into the same folder, resulting in a file structure similar to the following:
 
 ```
-jason@docker1:~/docker-essbase$ pwd && ls -l
-/home/jason/docker-essbase
+sowmya_t@docker1:~/EPM-on-Docker$ pwd && ls -l
+/home/sowmya_t/EPM-on-Docker
 total 6415212
 -rwxrwxr-x 1 sowmya_t sowmya_t       2072 Jan  3 22:01 config-and-start.sh
 -rw-rw-r-- 1 sowmya_t sowmya_t        614 Jan  3 19:01 docker-compose.yml
